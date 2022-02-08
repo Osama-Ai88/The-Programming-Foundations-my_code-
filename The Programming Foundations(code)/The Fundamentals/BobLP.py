@@ -354,18 +354,10 @@ def to_get_Cross(S1, S2):
 
     S3= set()
     
-    m= max(len(S1),len(S3))
 
-    if m==len(S1):
-        SJ=S1
-        SK=S2
-    if m==len(S2):
-        SJ=S2
-        SK=S1
+    for ele in S1:
 
-    for ele in SJ:
-
-        if ele in SK:
+        if ele in S2:
 
             S3.add(ele)
     
